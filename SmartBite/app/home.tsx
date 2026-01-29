@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "bold",
     color: "#3b8132",
+    marginBottom: 40,
   },
   logo : {
     width: 200,
