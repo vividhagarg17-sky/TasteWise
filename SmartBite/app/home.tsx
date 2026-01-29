@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import { Text, View, StyleSheet,Image,TouchableOpacity} from "react-native";
 import { router } from "expo-router";
 
@@ -8,7 +7,7 @@ const Index = () => {
     <View style = {styles.container}>
         <Text style = {styles.text}>Welcome to SmartBite!</Text>
       <Image source={require("../assets/images/logo.png")} style={styles.logo} />
-      <TouchableOpacity onPress={() => router.replace("/login")}>
+      <TouchableOpacity onPress={() => router.replace("/signup")}>
         <Text style={styles.start}>Let's Start</Text>
         </TouchableOpacity>
     </View>
