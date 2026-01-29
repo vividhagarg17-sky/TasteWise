@@ -1,12 +1,34 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import React, { useEffect } from "react";
+import { Text, View, StyleSheet,Image} from "react-native";
+import { router } from "expo-router";
 
-const Home = () => {
+const Index = () => {
+
   return (
-    <View>
-      <Text>Home</Text>
+    <View style = {styles.container}>
+      <Image source={require("../assets/images/logo.png")} style={styles.logo} />
+      <Text style = {styles.text}>SmartBite</Text>
     </View>
-  )
-}
+  );
+};
 
-export default Home
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,  
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#FCF4A3",
+  },
+  text: {
+    fontSize: 24,
+    fontWeight: "bold",
+    color: "#3b8132",
+  },
+  logo : {
+    width: 200,
+    height: 200,
+    marginBottom: 50,
+  },
+});
+
+export default Index;

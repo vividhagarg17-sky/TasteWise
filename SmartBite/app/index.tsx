@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import { Text, View, StyleSheet,Image} from "react-native";
-import { useNavigation } from "expo-router";
+import { router } from "expo-router";
 
 const Index = () => {
-const navigation = useNavigation();
+
 
 useEffect(() => {
   const timer = setTimeout(() => {
-    navigation.navigate("home"); // Navigate to the home screen after 10 seconds
+    router.replace("/home"); // Navigate to the home screen after 10 seconds
   }, 10000);
 
   return () => clearTimeout(timer); // Clear the timer if the component unmounts
