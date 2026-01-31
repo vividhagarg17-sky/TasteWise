@@ -7,7 +7,7 @@ const Layout = () => {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <SafeAreaView style={{ flex: 1 }}>
-        <Stack>
+        <Stack screenOptions={{ headerShown: false }}>
           <Stack.Screen name="index" />
           <Stack.Screen name="home" />
           <Stack.Screen name="login" />
